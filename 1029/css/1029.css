@@ -1,0 +1,149 @@
+.module-1029 {
+  background-image: url(../images/paper_bg.png);
+}
+.module-1029 .detail {
+  width: 100%;
+  padding: 0;
+  margin-top: 40px;
+  border: 0;
+}
+.module-1029 .detail .hinh {
+  margin-bottom: 2em;
+}
+.module-1029 .detail .hinh img {
+  height: auto !important;
+  width: 100%;
+  float: left;
+  display: block;
+}
+.module-1029 .detail .chitiet {
+  margin-bottom: 2em;
+}
+.module-1029 .detail .chitiet .title {
+  clear: none;
+  margin-top: 0;
+  padding: 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.module-1029 .detail .chitiet .price {
+  color: #cfa670;
+  font-size: 30px;
+  font-weight: bold;
+}
+.module-1029 .detail .chitiet .description {
+  margin: 5px 0 10px 0;
+  padding-left: 0 !important;
+}
+.module-1029 .detail .chitiet .description p {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.module-1029 .detail .chitiet .number {
+  margin-top: 2em;
+}
+.module-1029 .detail .chitiet .number .quantity {
+  float: left;
+  margin: 0 4px 0 0;
+}
+.module-1029 .detail .chitiet .number .quantity input {
+  -webkit-appearance: initial;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.module-1029 .detail .chitiet .number .quantity .addtocart {
+  color: #ffffff;
+  border-color: #222222;
+  background-color: #222222;
+  padding: 10px;
+  margin-left: 5px;
+}
+.module-1029 .detail .chitiet .number .quantity .addtocart:hover {
+  color: #cfa670;
+}
+.module-1029 .detail .chitiet .number .quantity .tag {
+  clear: both;
+  display: block;
+  text-decoration: none;
+}
+.module-1029 .detail .chitiet .number .quantity .tag a {
+  text-decoration: none;
+  color: #000000;
+}
+.module-1029 .detail .chitiet .number .quantity .tag a:hover {
+  color: #cfa670;
+}
+.module-1029 .detail .clearfix {
+  clear: both;
+}
+.module-1029 .tabmenu {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.module-1029 .tabmenu h1 {
+  padding: 50px 0;
+  font-weight: 400;
+  text-align: center;
+}
+.module-1029 .tabmenu p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+.module-1029 .tabmenu section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+.module-1029 .tabmenu input {
+  display: none;
+}
+.module-1029 .tabmenu label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+.module-1029 .tabmenu input:checked + label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid orange;
+  border-bottom: 1px solid #fff;
+}
+.module-1029 .tabmenu #tab1:checked ~ #content1,
+.module-1029 .tabmenu #tab2:checked ~ #content2,
+.module-1029 .tabmenu #tab3:checked ~ #content3,
+.module-1029 .tabmenu #tab4:checked ~ #content4 {
+  display: block;
+}
+.module-1029 .tabmenu .comment {
+  width: 100%;
+}
+.module-1029 .tabmenu .comment label {
+  display: none;
+}
+.module-1029 .tabmenu .comment label .ykien {
+  width: 100%;
+}
+.module-1029 .tabmenu .comment-name {
+  width: 33%;
+}
+.module-1029 .tabmenu .comment-name label {
+  display: none;
+}
+.module-1029 .tabmenu .comment-email {
+  width: 33%;
+}
+.module-1029 .tabmenu .comment-email label {
+  display: none;
+}
+@media all and (max-width: 372px) {
+  .module-1029 .detail .chitiet .number .quantity .addtocart {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+  }
+}

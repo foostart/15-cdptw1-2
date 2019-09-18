@@ -1,0 +1,150 @@
+.module-1029{
+    background-image: url(../images/paper_bg.png);
+    .detail{
+        width: 100%;
+        padding: 0;
+        margin-top: 40px;
+        border: 0;		 
+        .hinh{
+            margin-bottom: 2em;
+        }
+        .hinh img{		    	    	
+            height: auto !important;
+            width : 100%;
+            float : left;		    	    
+            display : block;
+        }
+        .chitiet{
+            margin-bottom: 2em;
+            .title{
+
+                clear: none;
+                margin-top: 0;
+                padding: 0;
+                font-size: 30px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            .price{
+                color: #cfa670;
+                font-size: 30px;
+                font-weight : bold;
+            }
+            .description{
+                margin: 5px 0 10px 0;
+                padding-left: 0 !important;
+                p{
+                    padding-top: 0.5em;
+                    padding-bottom: 0.5em;
+                }
+            }
+            .number{
+                margin-top: 2em;
+                .quantity{
+                    float: left;
+                    margin: 0 4px 0 0;
+                    input{
+                        -webkit-appearance: initial;
+                        padding : 10px;
+                        margin-bottom: 15px;
+                    }
+                    .addtocart{
+                        color: #ffffff;
+                        border-color: #222222;
+                        background-color: #222222;
+                        padding : 10px;
+                        margin-left: 5px;
+                    }
+                    .addtocart:hover{
+                        color : #cfa670;
+                    }
+                    .tag{
+                        clear: both;
+                        display: block;
+                        text-decoration : none;
+                        a{
+                            text-decoration: none;
+                            color : #000000;
+                        }
+                        a:hover{
+                            color : #cfa670;
+                        }
+                    }
+                }
+            }
+        }
+        .clearfix{
+            clear : both;
+        }
+    }
+    .tabmenu{
+        padding-left: 15px;
+        padding-right: 15px;
+        h1 {
+            padding: 50px 0;
+            font-weight: 400;
+            text-align: center;
+        }
+        p {
+            margin: 0 0 20px;
+            line-height: 1.5;
+        }
+        section {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid #ddd;
+        }
+        input {
+            display: none;
+        }
+        label {
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 15px 25px;
+            font-weight: 600;
+            text-align: center;
+            color: #bbb;
+            border: 1px solid transparent;
+        }
+        input:checked + label {
+            color: #555;
+            border: 1px solid #ddd;
+            border-top: 2px solid orange;
+            border-bottom: 1px solid #fff;
+        }
+        #tab1:checked ~ #content1,
+            #tab2:checked ~ #content2,
+            #tab3:checked ~ #content3,
+            #tab4:checked ~ #content4 {
+            display: block;
+        }
+        .comment{
+            width : 100%;
+            label{
+                display : none;
+                .ykien{
+                    width : 100%;
+                }
+            }
+        }
+        .comment-name{
+            width : 33%;
+            label{
+                display : none;
+            }
+        }
+        .comment-email{
+            width : 33%;
+            label{
+                display : none;
+            }
+        }
+    }
+    @media all and (max-width: 372px){
+        .detail .chitiet .number .quantity .addtocart{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 0px;
+        }
+    }
+}
