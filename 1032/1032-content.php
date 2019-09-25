@@ -12,6 +12,7 @@ and open the template in the editor.
 
         <link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <link href="../css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="../css/type-1.css">
         <script src="../js/jquery-1.11.0.min.js" type="text/javascript"></script>
         <script src="../js/bootstrap.js" type="text/javascript"></script>
 

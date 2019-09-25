@@ -134,7 +134,7 @@
   line-height: 37px;
 }
 .type-2 .today .carat {
-  position: absolute;
+  /*position: absolute;*/
   right: -5px;
   top: 14px;
   width: 18px;

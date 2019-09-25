@@ -22,6 +22,7 @@
         <title>module 1020</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="<?php echo $url_path ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo $url_path ?>/css/bootstrap.min.js" rel="stylesheet" type="text/css"/>
         <link href="<?php echo $url_path ?>/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="<?php echo $url_path ?>/css/1020.css" rel="stylesheet" type="text/css"/>
     </head>

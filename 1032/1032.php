@@ -10,6 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
         <link href="./css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <link href="./css/font-awesome.css" rel="stylesheet" type="text/css"/>
         <script src="./js/jquery-1.11.0.min.js" type="text/javascript"></script>
@@ -21,15 +22,23 @@ and open the template in the editor.
         }
         $less = new lessc;
         $less->compileFile('./less/type-comment.less', './css/type-comment.css');
+       
         ?>
 
         <link href="./css/all_css.css" rel="stylesheet" type="text/css"/>
         <link href="./css/type-comment.css" rel="stylesheet" type="text/css"/>
 
+        
+
+
+        
+
+
 
 
     </head>
     <body>
+    
         <div class="type-comment">
             <div class="row">
                 <div class="container">
@@ -38,37 +47,47 @@ and open the template in the editor.
                             <div class="box-comment">
                                 <form>
                                     <div class="title">
-                                        Ý kiến thảo luận
-                                    </div>
+                                        Ý kiến thảo luận:
+                                    </div><br>
                                     <div class="form-comment">
                                         <div class="input-group">
                                             <div class="txt-comment">
-                                                <textarea id="txtComment" placeholder="Mời bạn nhập ý kiến thắc mắc của bạn" class="form-control" style="height: 155px;"></textarea>
-                                            </div>
-                                            <div class="content-info">
-                                                <div class="info-title">Nhập thông tin của bạn</div>
+                                                <textarea id="txtComment" placeholder="Nhập vào đây ý kiến của các bạn" class="form-control" style="height: 155px;"></textarea>
+                                                
+                                            </div><br>
+                                            <div class="content-info"><br>
+                                                <div class="info-title">Nhập thông tinh cá nhân:</div><br>
                                                 <input id="email" class="form-control" placeholder="Email">
-                                                <input id="name" class="form-control" placeholder="Name">
-                                                <div>
-                                                    <label>Đáng giá SP:</label> 
-                                                    <img onmouseover="vnTcomment.select_vote(1)" src="./images/type-comment/star2.gif" id="vote_1" align="absmiddle" style="cursor:pointer">
-                                                    <img onmouseover="vnTcomment.select_vote(2)" src="./images/type-comment/star2.gif" id="vote_2" align="absmiddle" style="cursor:pointer">
-                                                    <img onmouseover="vnTcomment.select_vote(3)" src="./images/type-comment/star2.gif" id="vote_3" align="absmiddle" style="cursor:pointer">
-                                                    <img onmouseover="vnTcomment.select_vote(4)" src="./images/type-comment/star2.gif" id="vote_4" align="absmiddle" style="cursor:pointer">
-                                                    <img onmouseover="vnTcomment.select_vote(5)" src="./images/type-comment/star2.gif" id="vote_5" align="absmiddle" style="cursor:pointer">
-                                                    <input type="hidden" value="5" name="hvote" id="hvote">
+                                                <input type="name" id="name" class="form-control" placeholder="Name"><br>
+
+                                                <div class="title">
+                                                Giới tính:
+                                                    </div><br>
+                                                   <label> <input type="radio" value="1" name="hidden_email" id="hidden_email"> &nbsp;Nam </label><br>
+                                                   <label> <input type="radio" value="2" name="hidden_email" id="hidden_email"> &nbsp;Nữ</label><br>
                                                 </div>
-                                                <div>
+                                                <label>Ðánh giá SP:</label> 
+                                                <div class="stars">
+                                                <form action="">     
+                                                    <input class="star star-5" id="star-5" type="radio" name="star"/>
+                                                    <label class="star star-5" for="star-5"></label>
+                                                    <input class="star star-4" id="star-4" type="radio" name="star"/>
+                                                    <label class="star star-4" for="star-4"></label>
+                                                    <input class="star star-3" id="star-3" type="radio" name="star"/>
+                                                    <label class="star star-3" for="star-3"></label>
+                                                    <input class="star star-2" id="star-2" type="radio" name="star"/>
+                                                    <label class="star star-2" for="star-2"></label>
+                                                    <input class="star star-1" id="star-1" type="radio" name="star"/>
+                                                    <label class="star star-1" for="star-1"></label>
+                                                </form>
+                                                </div>                     
+                                                <div><br>
                                                     <div class="vk-menu">
-                                                        <b>Bộ gõ :</b> <input id="him_off" name="viet_method"   type="radio"> Off
-                                                        <input id="him_telex" type="radio"  name="viet_method"> Telex
-                                                        <input id="him_vni" name="viet_method"  type="radio"> VNI
+                                                        
                                                     </div>
                                                     <script type="text/javascript">var method = 2, on_off = 1, useCookie = 0;</script>
                                                 </div>
-                                                <div>
-                                                    <input type="checkbox" value="1" name="hidden_email" id="hidden_email"> &nbsp;Ẩn email của tôi
-                                                </div>
+                                                
                                             </div>
 
                                         </div>

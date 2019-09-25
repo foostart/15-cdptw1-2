@@ -1,104 +1,72 @@
-.type-comment .comment {
-  margin-bottom: 20px;
+div.stars {
+  width: 172px;
+  height: 26px;
+  display: inline-block;
 }
-.type-comment .comment .title {
-  font-size: 25px;
-  line-height: 33px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  color: #333333;
+input.star {
+  display: none;
 }
-.type-comment .comment .input-group {
-  position: relative;
-  display: table;
-  border-collapse: separate;
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 15px;
+  color: #444;
+  transition: all .2s;
+  cursor: pointer;
 }
-.type-comment .comment .form-comment {
-  width: 100%;
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #a38c24;
+  transition: all .25s;
 }
-.type-comment .comment .form-comment textarea.form-control {
-  width: 100%;
-  resize: vertical;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+input.star-5:checked ~ label.star:before {
+  color: #c0b143;
+  text-shadow: 0 0 20px #952;
 }
-.type-comment .comment .form-comment .content-info {
-  width: 100%;
-  padding: 15px;
-  clear: both;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+input.star-1:checked ~ label.star:before {
+  color: #F62;
 }
-.type-comment .comment .form-comment .content-info .info-title {
-  margin-bottom: 10px;
+label.star:hover {
+  transform: rotate(-15deg) scale(1.3);
 }
-.type-comment .comment .form-comment .content-info .form-control {
-  float: none;
-  margin-bottom: 10px;
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
 }
-.type-comment .comment .form-comment .form-control {
-  height: 40px;
-}
-.type-comment .comment .form-comment label {
+label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: bold;
+  cursor: pointer;
 }
-.type-comment .comment .form-comment input[type="radio"],
-.type-comment .comment .form-comment input[type="checkbox"] {
-  margin: 4px 0 0;
-  margin-top: 1px \9;
-  line-height: normal;
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
 }
-.type-comment .comment .form-comment .input-group-btn {
-  padding-left: 5px;
-  vertical-align: top;
-  position: relative;
-  font-size: 0;
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
   white-space: nowrap;
-}
-.type-comment .comment .form-comment button.btn {
-  height: auto;
-  font-size: 16px;
-  line-height: 24px;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
   color: #ffffff;
-  padding: 7px 10px;
-  text-transform: uppercase;
-  background: #67635c;
-  border: 0px;
-  position: relative;
-}
-@media (min-width: 768px) {
-  .type-comment .comment .form-comment .input-group-btn,
-  .type-comment .comment .form-comment .input-group {
-    float: left;
-  }
-  .type-comment .comment .form-comment .input-group-btn {
-    width: 5%;
-  }
-  .type-comment .comment .form-comment .input-group {
-    width: 95%;
-  }
-}
-@media (max-width: 767px) {
-  .type-comment .comment .title {
-    margin: 0 15px;
-  }
-  .type-comment .comment .form-comment textarea {
-    width: 100%;
-    padding: 0 15px;
-  }
-  .type-comment .comment .form-comment .input-group-btn {
-    width: auto;
-    float: right;
-    position: absolute;
-    right: 10px;
-    margin-top: -55px;
-  }
-  .type-comment .comment .form-comment .input-group {
-    width: 100%;
-  }
+  border-color: #222222;
+  background-color: #222222;
+  padding: 10px;
+  margin-left: 5px;
 }

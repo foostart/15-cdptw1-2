@@ -30,9 +30,11 @@
         <link href="<?php echo $url_path ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo $url_path ?>/css/font-awesome.min.css" rel="stylesheet">       
         <link href="<?php echo $url_path ?>/css/type-1.css" rel="stylesheet" type="text/css" />
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" rel="stylesheet" type="text/css"/> 
 
         <script src="<?php echo $url_path ?>/js/jquery.min.js" ></script>
         <script src="<?php echo $url_path ?>/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
     </head>
     <body>

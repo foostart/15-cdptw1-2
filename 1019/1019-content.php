@@ -7,6 +7,12 @@ preg_match_all($pattern_uri, __DIR__, $matches);
 $url_path = $url_host . $matches[1][0];
 $url_path = str_replace('\\', '/', $url_path);
 ?>
+
+<script>
+function myFunction() {
+document.getElementById("dropdown-toggle active").innerHTML = "dropdown-menu";
+}
+</script>
 <div class="type-1019">
     <div class="container">
         <div class="row">
@@ -33,15 +39,13 @@ $url_path = str_replace('\\', '/', $url_path);
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <!--MENU DROP DOWN-->
-                        <li class="dropdown show-hover">
-                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown">HOME</a>
+                        <li  class="dropdown show-hover">
+                            <a onclick="myFunction()" href="#" class="dropdown-toggle active" data-toggle="dropdown" >HOME</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Home 1 - New</a></li>
                                 <li><a href="#">Home 2 - Classic</a></li>
                                 <li><a href="#">Home 3 - Simple</a></li>
-                                <li><a href="#">Home 4 - One Page</a></li>
-                                <li><a href="#">Home 5 - Parallax</a></li>
-                                <li><a href="#">Home 6 - Video</a></li>
+                                
                             </ul>
                         </li>
                         <li class="dropdown show-hover">
@@ -50,9 +54,8 @@ $url_path = str_replace('\\', '/', $url_path);
                                 <li><a href="#">Default Style</a></li>
                                     <li><a href="#">Menu Mixed</a></li>
                                     <li><a href="#">Menu Classic</a></li>
-                                    <li><a href="#">Menu Grid</a></li>
-                                    <li><a href="#">Menu Gird Image</a></li>
-                                    <li><a href="#">Menu Parallax</a></li>   
+                                   
+                                     
                             </ul>
                         </li>
                         <li class="dropdown show-hover">
@@ -61,42 +64,10 @@ $url_path = str_replace('\\', '/', $url_path);
                                 <li><a href="#">Shop Frontpage</a></li>
                                 <li><a href="#">Right Sidebar</a></li>
                                 <li><a href="#">Left Sidebar</a></li>
-                                <li><a href="#">Fullwitch</a></li>
-                                <li><a href="#">Grid</a></li>
+                             
                             </ul>
                         </li>
-                        <li class="dropdown show-hover">
-                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown">DELIVERY</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Right Sidebar</a></li>
-                                <li><a href="#">Left Sidebar</a></li>
-                                <li><a href="#">Fullwitch</a></li>
-                                <li><a href="#">Grid</a></li>
-                            </ul>
-                        </li>
-                         <li class="dropdown show-hover">
-                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown">NEWS</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Right Sidebar</a></li>
-                                <li><a href="#">Left Sidebar</a></li>
-                                <li><a href="#">Fullwitch</a></li>
-                                <li><a href="#">Grid</a></li>
-                                <li><a href="#">Grid Left Sidebar</a></li>
-                                <li><a href="#">Grid Right Sidebar</a></li>
-                                <li><a href="#">Single Post</a></li>
-                            </ul>
-                        </li>
-                         <li class="dropdown show-hover">
-                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown">PAGES</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Menu Classic</a></li>
-                                <li><a href="#">Menu Grid</a></li>
-                                <li><a href="#">Menu Gird Image</a></li>
-                                <li><a href="#">Menu Parallax</a></li> 
-                                <li><a href="#">Button Desgin</a></li>
-                                <li><a href="#">Button Desgin</a></li>
-                            </ul>
-                        </li>
+                        
                          <li> <button type="button"> RESERVATION </button></li>
                     </ul>
                 </div>

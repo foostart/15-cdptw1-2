@@ -54,6 +54,7 @@
                         background-color: #222222;
                         padding : 10px;
                         margin-left: 5px;
+                        cursor: pointer;
                     }
                     .addtocart:hover{
                         color : #cfa670;
@@ -105,12 +106,20 @@
             text-align: center;
             color: #bbb;
             border: 1px solid transparent;
+            cursor: pointer;
+        }
+        label:hover{
+            color: #cfa670;
         }
         input:checked + label {
             color: #555;
             border: 1px solid #ddd;
             border-top: 2px solid orange;
             border-bottom: 1px solid #fff;
+            cursor: pointer;
+        }
+        input:checked + label:hover{
+            color: #000000
         }
         #tab1:checked ~ #content1,
             #tab2:checked ~ #content2,
@@ -118,6 +127,7 @@
             #tab4:checked ~ #content4 {
             display: block;
         }
+        
         .comment{
             width : 100%;
             label{
