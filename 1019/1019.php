@@ -23,7 +23,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
         <link href="<?php echo $url_path ?>/css/bootstrap.min.css" rel="stylesheet">      
         <link href="<?php echo $url_path ?>/css/1019.css" rel="stylesheet" type="text/css" /> 
         <script src="<?php echo $url_path ?>/js/jquery-2.1.4.min.js"></script>   
