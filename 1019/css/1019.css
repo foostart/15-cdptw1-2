@@ -46,7 +46,7 @@
   border-color: #222222;
   background-color: #222222;
   padding: 10px;
-  margin-left: 5px;
+  margin-left: 0px;
 }
 .type-1019 ul li button:hover {
   color: #cfa670;
@@ -68,6 +68,7 @@
 .type-1019 .navbar-default .navbar-collapse .navbar-nav li ul li a:hover {
   color: white;
   padding-left: 7px;
+  background: blue;
 }
 .type-1019 .navbar-nav>.open>li {
   transition: all 0.5s ease;
@@ -91,9 +92,9 @@
   border: none;
 }
 .type-1019 .navbar-default .navbar-nav>li>a {
-  color: black;
+  color: green !important;
   font-weight: 600;
-  display: inline-block;
+  display: block;
   padding: 12px;
   font-size: 20px;
   text-decoration: none;
@@ -165,7 +166,7 @@
   .type-1019 .navbar-default .navbar-collapse .navbar-nav {
     margin-left: 0;
     margin-right: 0;
-    background-color: #222222;
+    background-color: blue;
   }
   .type-1019 .navbar-toggle {
     position: absolute;
