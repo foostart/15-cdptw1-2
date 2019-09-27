@@ -1,147 +1,314 @@
-
-.type-2{
-    margin: 10px;
-    .boder{
-        margin-top: 10px;
+.type-1{
+ .swiper-container {          
+    position: relative;
+    overflow: auto;
+    list-style: none;
+    height: 100vh;
+    .swiper-wrapper {
+        display: -webkit-box;
+        .swiper-slide {
+            cursor: pointer;               
+            img{
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }               
+        }
+    }                  
+          
+    .slide2{
+        margin: -571px 245px 600px 269px ;
+        text-align: left;
+        .title{
+             text-align: center;
+             font-weight: bold;
+            margin: 65px;
+            padding: 65px;
+            h2{
+                color: #fff;
+                font: 50px Libre Baskerville;
+                font-weight: 400;
+                
+                 line-height: 55px;
+            }
+            p{
+                letter-spacing: 0.15em;
+                color: #6cd31d;
+                font:  Libre Baskerville;
+                line-height: 20px;
+                font-weight: 900;
+                font-size: 15px;
+            } 
+        } 
     }
-    .swiper-container{
-        background: #4d7df0;
-        border-radius: 1%;
-        position: relative;
-        .item_info{
-            position: absolute;
-            z-index: 9999;
-            .apple{
-                text-align: center;
+    .slide3{
+        margin: -571px 245px 600px 269px ;
+        text-align: left;
+        .title{
+             text-align: center;
+             font-weight: bold;
+    margin: 65px;
+    padding: 65px;
+            h2{
+                color: #fff;
+                font: 50px Libre Baskerville;
+                font-weight: 400;
+                
+                 line-height: 55px;
+            }
+            p{
+                letter-spacing: 0.15em;
+                color: #6cd31d;
+                font:  Libre Baskerville;
+                line-height: 20px;
+                font-weight: 900;
+                font-size: 15px;
             }
         }
-        .chu{
-            position: absolute;
-        }
-        .fade-carousel {
-            position: relative;
-            height: 100vh;
-        }
-        .fade-carousel .carousel-inner .item {
-            height: 100vh;
-        }
-        .fade-carousel .carousel-indicators > li {
-            margin: 0 2px;
-            background-color: #f39c12;
-            border-color: #f39c12;
-            opacity: .7;
-        }
-        .fade-carousel .carousel-indicators > li.active {
-            width: 10px;
-            height: 10px;
-            opacity: 1;
-        }
-        
+    }  
+    .btn-primary {
+        background: brown;
+        color: #fff;
+        border-color: brown;
+    }
+    .btn {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: inline-block;
+        padding: 12px 18px;
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        user-select: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        letter-spacing: 0.15em;
+    }
+    .btn-primary:hover{
+        background: #b28d6a;
+    }
+    .swiper-button-next,.swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        width: 2.7rem;
+        height: 4.4rem;
+        margin-top: -2.2rem;
+        cursor: pointer;
+    }
+    .swiper-button-prev:not(:focus){
+        /* Styles for only form buttons that do not have focus */
+    }
+    .swiper-button-prev,.swiper-container-rtl .swiper-button-next {
+        border-radius: 11.5rem;
+        height: 11.5rem;
+        width: 11.5rem;
+        right: auto;
+        opacity: 0;
+        position: absolute;
+        top: 46rem;
+        background-image: none;
+    } 
 
-        /********************************/
-        /*          Hero Headers        */
-        /********************************/
-        .hero {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            z-index: 3;
-            color: #fff;
-            text-align: center;
-            text-transform: uppercase;
-            text-shadow: 1px 1px 0 rgba(0,0,0,.75);
-            -webkit-transform: translate3d(-50%,-50%,0);
-            -moz-transform: translate3d(-50%,-50%,0);
-            -ms-transform: translate3d(-50%,-50%,0);
-            -o-transform: translate3d(-50%,-50%,0);
-            transform: translate3d(-50%,-50%,0);
+    .swiper-button-next,.swiper-container-rtl .swiper-button-prev {
+        border-radius: 11.5rem;
+        height: 11.5rem;
+        width: 11.5rem;
+        left: auto;
+        opacity: 0;
+        position: absolute;
+        top: 46rem;
+        background-image: none;
+    }
+    .fa-angle-right, .fa-angle-left{
+        position: relative;
+        color: rgb(211, 118, 110);
+        font-size: 7rem;
+        bottom: 200px;
+        left: 4rem;
+    }
+    .fa-angle-right:hover{
+        color: rgb(137, 98, 85);
+    }
+    .fa-angle-left:hover{
+        color: rgb(137, 98, 85);
+    }
+}
+.swiper-pagination-bullets
+{
+    top: 77%;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 0.5rem;
+}
+.swiper-container:hover{
+    .swiper-button-prev,.swiper-container-rtl .swiper-button-next, 
+    .swiper-button-next,.swiper-container-rtl .swiper-button-prev {
+        opacity: 1;
+    }
+} 
+}
+@media (max-width: 1170px){
+    .fa-angle-right, .fa-angle-left{
+     bottom: 250px !important;
+ }
+ .slide{
+    margin-top: -200px !important;
+    margin-bottom: 200px !important;
+}
+.slide2{
+    margin: -350px 200px 350px 200px !important;
+}
+.slide3{
+    margin-top: -300px !important;
+    margin-bottom: 300px !important;
+    .title{
+        h2{
+            font: 35px Libre Baskerville !important;
         }
-        .hero h1 {
-            font-size: 3em;    
-            font-weight: bold;
-            margin: 0;
-            padding: 0;
+        p{
+            font: 15px Libre Baskerville;
         }
-        .hero h3{
-            font-size: 1em;
-            font-weight: bold;
-        }
-
-        .fade-carousel .carousel-inner .item .hero {
-            opacity: 0;
-            -webkit-transition: 2s all ease-in-out .1s;
-            -moz-transition: 2s all ease-in-out .1s; 
-            -ms-transition: 2s all ease-in-out .1s; 
-            -o-transition: 2s all ease-in-out .1s; 
-            transition: 2s all ease-in-out .1s; 
-        }
-        .fade-carousel .carousel-inner .item.active .hero {
-            opacity: 1;
-            -webkit-transition: 2s all ease-in-out .1s;
-            -moz-transition: 2s all ease-in-out .1s; 
-            -ms-transition: 2s all ease-in-out .1s; 
-            -o-transition: 2s all ease-in-out .1s; 
-            transition: 2s all ease-in-out .1s;    
-        }
-        
-
-        /********************************/
-        /*            Overlay           */
-        /********************************/
-        .overlay {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-            background-color: #080d15;
-            opacity: .7;
-        }
-
-        /********************************/
-        /*          Custom Buttons      */
-        /********************************/
-        .btn.btn-lg {padding: 10px 40px;}
-        .btn.btn-hero,
-        .btn.btn-hero:hover,
-            .btn.btn-hero:focus {
-            color: #f5f5f5;
-            background-color: #1abc9c;
-            border-color: #1abc9c;
-            outline: none;
-            margin: 20px auto;
-        }
-
-        /********************************/
-        /*       Slides backgrounds     */
-        /********************************/
-        .fade-carousel .slides .slide-1, 
-        .fade-carousel .slides .slide-2,
-        .fade-carousel .slides .slide-3 {
-            height: 100vh;
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-        }
-        .fade-carousel .slides .slide-1 {
-            background-image: url(https://ununsplash.imgix.net/photo-1416339134316-0e91dc9ded92?q=75&fm=jpg&s=883a422e10fc4149893984019f63c818); 
-        }
-        .fade-carousel .slides .slide-2 {
-            background-image: url(https://ununsplash.imgix.net/photo-1416339684178-3a239570f315?q=75&fm=jpg&s=c39d9a3bf66d6566b9608a9f1f3765af);
-        }
-        .fade-carousel .slides .slide-3 {
-            background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327);
-        }
-
-        /********************************/
-        /*          Media Queries       */
-        /********************************/
-        @media screen and (min-width: 980px){
-            .hero { width: 980px; }    
-        }
-        @media screen and (max-width: 640px){
-            .hero h1 { font-size: 4em; }    
-        }
+    }
+}
+}
+@media (max-width: 900px){
+    .fa-angle-right, .fa-angle-left{
+     bottom: 300px !important;
+ }
+ 
+.slide2{
+    margin: -300px 200px 300px 200px !important;
+    .title{
+    h2{
+        font-size: 38px !important;
+    }
 
     }
+}
+.slide3{
+    margin-top: -250px !important;
+    margin-bottom: 250px !important;
+
+}
+}
+@media (max-width: 700px){
+    .fa-angle-right, .fa-angle-left{
+     bottom: 350px !important;
+ }
+ .btn{
+    padding: 6px 10px !important;
+}
+
+.slide2{
+    margin: -200px 100px 200px 100px !important;
+    .title{
+        h2{
+            font: 35px Libre Baskerville !important;
+        }
+        p{
+            font: 15px Libre Baskerville !important;
+            letter-spacing: 0.0em !important;
+        }
+    }           
+}
+.slide3{
+    margin-top: -170px !important;
+    margin-bottom: 170px !important;
+    .title{
+        h2{
+            font: 20px Libre Baskerville !important;
+        }
+        p{
+            font: 10px Libre Baskerville !important;
+            letter-spacing: 0.0em !important;
+        }
+    }           
+}
+}
+@media (max-width: 479px){
+    .fa-angle-right, .fa-angle-left{
+        display: none;
+    }
+}
+@media (max-width: 450px){
     
+    .slide2{
+        margin-top: -170px !important;
+        margin-bottom: 170px !important;
+        .title{
+            h2{
+                font-size: 15px !important;
+            }
+        }
+    }
+}
+@media (max-width: 390px){
+    .btn{
+        padding: 3px 9px !important;
+    }
+   
+    .slide2{
+        margin-top: -201px !important;
+        margin-bottom: 4px !important;
+        .title{
+            h2{
+                font: 20px Libre Baskerville !important;
+            }
+            p{
+                font: 10px Libre Baskerville !important;
+            }
+        }
+    }
+    .slide3{
+        margin-top: -150px !important;
+        margin-bottom: 150px !important;
+        .title{
+            h2{
+                font: 20px Libre Baskerville !important;
+            }
+            p{
+                font: 10px Libre Baskerville !important;
+            }
+        }
+    }
+}
+@media (max-width: 300px){
+    .btn{
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+   
+    .slide2{
+        margin: -110px 20px 110px 20px !important;
+        .title{
+            h2{                   
+                font: 15px Libre Baskerville !important;
+            }
+            p{
+                margin: 0px !important;
+                font: 10px Libre Baskerville !important;
+            }
+        }
+    }
+    .slide3{
+        margin-top: -120px !important;
+        margin-bottom: 120px !important;
+        .title{
+            h2{                   
+                font: 15px Libre Baskerville !important;
+            }
+            p{
+                margin: 0px !important;
+                font: 10px Libre Baskerville !important;
+            }
+        }
+    }
 }

@@ -11,7 +11,7 @@
 <div class = "type-1020">
   <div class = "container">
     <div class="row">
-      <div class="col-md-9">  
+      <div class="col-md-9 col-sm-12 - col-xs12">  
         <div class="images">
           <img src="<?php echo $url_path ?>/images/hinh2.jpg" width="100%" height="100%" alt="">
         </div>
@@ -23,7 +23,7 @@
               </p>
             </div>     
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 col-sm-12 col-xs-12">
           <div class="Khung">
             <a target="_blank" href="#"><i class="fa fa-cog"></i></a><br>
             <a target="_blank" href="#"><i class="fa fa-edit"></i></a><br>
