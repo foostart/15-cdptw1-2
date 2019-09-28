@@ -25,23 +25,13 @@ $url_path = str_replace('\\', '/', $url_path);
             <div class="swiper-slide">
                 <a href="#">
                     <img class="img-responsive" src="images/2.jpg" alt="Flower">
-                    <div class="caption slide3">
-                        <div class="title">
-                           
-                           
-                        </div> 
-                    </div>
+                     
                 </a>
             </div>
             <div class="swiper-slide">
                 <a href="#">
                     <img class="img-responsive" src="images/3.jpg" alt="Flower">
-                    <div class="caption slide3">
-                        <div class="title">
-                           
-                             
-                        </div> 
-                    </div>
+                     
                 </a>
             </div>
         </div>
