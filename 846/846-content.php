@@ -28,7 +28,7 @@ $url_path = str_replace('\\', '/', $url_path);
                     <div class="caption slide3">
                         <div class="title">
                            
-                            <span class="btn btn-primary b1"><strong>Read more</strong></span>
+                           
                         </div> 
                     </div>
                 </a>
@@ -39,7 +39,7 @@ $url_path = str_replace('\\', '/', $url_path);
                     <div class="caption slide3">
                         <div class="title">
                            
-                            <span class="btn btn-primary b1"><strong>Read more</strong></span>
+                             
                         </div> 
                     </div>
                 </a>
