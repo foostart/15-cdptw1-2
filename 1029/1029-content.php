@@ -1,3 +1,4 @@
+
 <?php
 $url_host = 'http://' . $_SERVER['HTTP_HOST'];
 $pattern_document_root = addcslashes(realpath($_SERVER['DOCUMENT_ROOT']), '\\');
@@ -11,9 +12,28 @@ $url_path = str_replace('\\', '/', $url_path);
     <div class="container">
         <div class="row">
             <div class="detail">
+             <!-- Swiper -->
                 <div class="col-md-6 col-sm-6 col-xs-12 hinh">
-                    <a href="#"><img src="<?php echo $url_path ?>/images/hinh1.jpg" alt=""></a>
-                </div>
+                <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="../1029/images/1.jpg" alt="">
+                              </div>
+                              
+                              <div class="swiper-slide"><img src="../1029/images/3.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="../1029/images/4.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="../1029/images/5.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="../1029/images/6.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="../1029/images/7.jpg" alt=""></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <br>
+                            <br>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            </div>
+                      </div>      
                 <div class="col-md-6 col-sm-6 col-xs-12 chitiet">
                     <h2 class="title">SALTED FRIED CHICKEN</h2>
                     <p class="price">£12.00</p>
@@ -27,7 +47,7 @@ $url_path = str_replace('\\', '/', $url_path);
                         </div>
                     </form>
                 </div>
-            </div>
+            
             <div class="clearfix"></div>
             <div class="tabmenu">
                 <input id="tab1" type="radio" name="tabs" checked>

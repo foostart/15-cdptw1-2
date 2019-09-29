@@ -22,52 +22,32 @@
         margin: -571px 245px 600px 269px ;
         text-align: left;
         .title{
-             text-align: center;
-             font-weight: bold;
-            margin: 65px;
-            padding: 65px;
-            h2{
-                color: #fff;
-                font: 50px Libre Baskerville;
-                font-weight: 400;
-                
-                 line-height: 55px;
+             position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 3;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+            -webkit-transform: translate3d(-50%,-50%,0);
+            -moz-transform: translate3d(-50%,-50%,0);
+            -ms-transform: translate3d(-50%,-50%,0);
+            -o-transform: translate3d(-50%,-50%,0);
+            transform: translate3d(-50%,-50%,0);
+            h1{
+                font-size: 3em;    
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
             }
-            p{
-                letter-spacing: 0.15em;
-                color: #6cd31d;
-                font:  Libre Baskerville;
-                line-height: 20px;
-                font-weight: 900;
-                font-size: 15px;
+            h3{
+                font-size: 1em;
+            font-weight: bold;
             } 
         } 
     }
-    .slide3{
-        margin: -571px 245px 600px 269px ;
-        text-align: left;
-        .title{
-             text-align: center;
-             font-weight: bold;
-    margin: 65px;
-    padding: 65px;
-            h2{
-                color: #fff;
-                font: 50px Libre Baskerville;
-                font-weight: 400;
-                
-                 line-height: 55px;
-            }
-            p{
-                letter-spacing: 0.15em;
-                color: #6cd31d;
-                font:  Libre Baskerville;
-                line-height: 20px;
-                font-weight: 900;
-                font-size: 15px;
-            }
-        }
-    }  
+  
     .btn-primary {
         background: brown;
         color: #fff;
@@ -143,7 +123,7 @@
 }
 .swiper-pagination-bullets
 {
-    top: 77%;
+    top: 95%;
 }
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 0.5rem;
@@ -159,24 +139,10 @@
     .fa-angle-right, .fa-angle-left{
      bottom: 250px !important;
  }
- .slide{
-    margin-top: -200px !important;
-    margin-bottom: 200px !important;
-}
+ 
+  
 .slide2{
     margin: -350px 200px 350px 200px !important;
-}
-.slide3{
-    margin-top: -300px !important;
-    margin-bottom: 300px !important;
-    .title{
-        h2{
-            font: 35px Libre Baskerville !important;
-        }
-        p{
-            font: 15px Libre Baskerville;
-        }
-    }
 }
 }
 @media (max-width: 900px){
@@ -187,22 +153,21 @@
 .slide2{
     margin: -300px 200px 300px 200px !important;
     .title{
-    h2{
+    h1{
         font-size: 38px !important;
     }
 
     }
 }
-.slide3{
-    margin-top: -250px !important;
-    margin-bottom: 250px !important;
 
-}
 }
 @media (max-width: 700px){
     .fa-angle-right, .fa-angle-left{
      bottom: 350px !important;
  }
+ @media screen and (min-width: 320px){
+    size : 15px;
+}
  .btn{
     padding: 6px 10px !important;
 }
@@ -210,28 +175,16 @@
 .slide2{
     margin: -200px 100px 200px 100px !important;
     .title{
-        h2{
+        h1{
             font: 35px Libre Baskerville !important;
         }
-        p{
+        h3{
             font: 15px Libre Baskerville !important;
             letter-spacing: 0.0em !important;
         }
     }           
 }
-.slide3{
-    margin-top: -170px !important;
-    margin-bottom: 170px !important;
-    .title{
-        h2{
-            font: 20px Libre Baskerville !important;
-        }
-        p{
-            font: 10px Libre Baskerville !important;
-            letter-spacing: 0.0em !important;
-        }
-    }           
-}
+
 }
 @media (max-width: 479px){
     .fa-angle-right, .fa-angle-left{
@@ -244,7 +197,7 @@
         margin-top: -170px !important;
         margin-bottom: 170px !important;
         .title{
-            h2{
+            h1{
                 font-size: 15px !important;
             }
         }
@@ -259,26 +212,15 @@
         margin-top: -201px !important;
         margin-bottom: 4px !important;
         .title{
-            h2{
+            h1{
                 font: 20px Libre Baskerville !important;
             }
-            p{
+            h3{
                 font: 10px Libre Baskerville !important;
             }
         }
     }
-    .slide3{
-        margin-top: -150px !important;
-        margin-bottom: 150px !important;
-        .title{
-            h2{
-                font: 20px Libre Baskerville !important;
-            }
-            p{
-                font: 10px Libre Baskerville !important;
-            }
-        }
-    }
+
 }
 @media (max-width: 300px){
     .btn{
@@ -289,26 +231,14 @@
     .slide2{
         margin: -110px 20px 110px 20px !important;
         .title{
-            h2{                   
+            h1{                   
                 font: 15px Libre Baskerville !important;
             }
-            p{
+            h3{
                 margin: 0px !important;
                 font: 10px Libre Baskerville !important;
             }
         }
     }
-    .slide3{
-        margin-top: -120px !important;
-        margin-bottom: 120px !important;
-        .title{
-            h2{                   
-                font: 15px Libre Baskerville !important;
-            }
-            p{
-                margin: 0px !important;
-                font: 10px Libre Baskerville !important;
-            }
-        }
-    }
+
 }

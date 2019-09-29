@@ -16,6 +16,10 @@ $url_path = str_replace('\\', '/', $url_path);
                     <img class="img-responsive" src="images/1.jpg" alt="Flower">
                     <div class="caption slide2">
                         <div class="title">
+                        <div>
+                                    <h1>We Help You Learn What You Love</h1>        
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie</h3>
+                                </div>
                            
                             <span class="btn btn-primary b1"><strong>Read more</strong></span>
                         </div> 
@@ -25,12 +29,32 @@ $url_path = str_replace('\\', '/', $url_path);
             <div class="swiper-slide">
                 <a href="#">
                     <img class="img-responsive" src="images/2.jpg" alt="Flower">
+                    <div class="caption slide2">
+                        <div class="title">
+                        <div>
+                                    <h1>We Help You Learn What You Love</h1>        
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie</h3>
+                                </div>
+                           
+                            <span class="btn btn-primary b1"><strong>Read more</strong></span>
+                        </div> 
+                    </div>
                      
                 </a>
             </div>
             <div class="swiper-slide">
                 <a href="#">
                     <img class="img-responsive" src="images/3.jpg" alt="Flower">
+                    <div class="caption slide2">
+                        <div class="title">
+                        <div>
+                                    <h1>We Help You Learn What You Love</h1>        
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie</h3>
+                                </div>
+                           
+                            <span class="btn btn-primary b1">Read more</span>
+                        </div> 
+                    </div>
                      
                 </a>
             </div>
