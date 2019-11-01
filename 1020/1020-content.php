@@ -12,9 +12,9 @@
   <div class = "container">
     <div class="row">
       <div class="col-md-9  ">  
-        <div class="images">
+        <div class="images" >
         
-          <img src="<?php echo $url_path ?>/images/hinh2.jpg" width="80%" height="100%" alt="">
+          <img src="<?php echo $url_path ?>/images/hinh2.jpg" width="80%"   alt=""  >
         
         <div class="text">
                         <div>

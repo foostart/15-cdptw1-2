@@ -16,14 +16,7 @@ and open the template in the editor.
         <script src="../js/jquery-1.11.0.min.js" type="text/javascript"></script>
         <script src="../js/bootstrap.js" type="text/javascript"></script>
 
-        <?php
-        if (!class_exists('lessc')) {
-            include ('../libs/lessc.inc.php');
-        }
-        $less = new lessc;
-        $less->compileFile('../less/type-comment.less', '../css/type-comment.css');
-        ?>
-
+      
         <link href="../css/all_css.css" rel="stylesheet" type="text/css"/>
         <link href="../css/type-comment.css" rel="stylesheet" type="text/css"/>
 
@@ -52,18 +45,26 @@ and open the template in the editor.
                                                 <input id="name" class="form-control" placeholder="Name">
                                                 <div>
                                                     <label>Đáng giá SP:</label> 
-                                                    <img onmouseover="vnTcomment.select_vote(1)" src="../images/type-comment/star2.gif" id="vote_1" align="absmiddle" style="cursor:pointer">
-                                                    <img onmouseover="vnTcomment.select_vote(2)" src="../images/type-comment/star2.gif" id="vote_2" align="absmiddle" style="cursor:pointer">
-                                                    <img onmouseover="vnTcomment.select_vote(3)" src="../images/type-comment/star2.gif" id="vote_3" align="absmiddle" style="cursor:pointer">
-                                                    <img onmouseover="vnTcomment.select_vote(4)" src="../images/type-comment/star2.gif" id="vote_4" align="absmiddle" style="cursor:pointer">
-                                                    <img onmouseover="vnTcomment.select_vote(5)" src="../images/type-comment/star2.gif" id="vote_5" align="absmiddle" style="cursor:pointer">
-                                                    <input type="hidden" value="5" name="hvote" id="hvote">
+                                                    <div class="stars">
+                                                <form action="">     
+                                                    <input class="star star-5" id="star-5" type="radio" name="star"/>
+                                                    <label class="star star-5" for="star-5"></label>
+                                                    <input class="star star-4" id="star-4" type="radio" name="star"/>
+                                                    <label class="star star-4" for="star-4"></label>
+                                                    <input class="star star-3" id="star-3" type="radio" name="star"/>
+                                                    <label class="star star-3" for="star-3"></label>
+                                                    <input class="star star-2" id="star-2" type="radio" name="star"/>
+                                                    <label class="star star-2" for="star-2"></label>
+                                                    <input class="star star-1" id="star-1" type="radio" name="star"/>
+                                                    <label class="star star-1" for="star-1"></label>
+                                                </form>
+                                                </div>  
                                                 </div>
                                                 <div>
                                                     <div class="vk-menu">
-                                                        <b>Bộ gõ :</b> <input id="him_off" name="viet_method"   type="radio"> Off
-                                                        <input id="him_telex" type="radio"  name="viet_method"> Telex
-                                                        <input id="him_vni" name="viet_method"  type="radio"> VNI
+                                                        <b>Bộ gõ :</b> <input id="him_off" name="viet_method" type="radio" style="cursor: pointer;"> Off
+                                                        <input id="him_telex" type="radio"  name="viet_method" style="cursor: pointer;"> Telex
+                                                        <input id="him_vni" name="viet_method"  type="radio" style="cursor: pointer;"> VNI
                                                     </div>
                                                     <script type="text/javascript">var method = 2, on_off = 1, useCookie = 0;</script>
                                                 </div>
